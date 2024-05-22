@@ -57,6 +57,7 @@ module.exports = {
       parser: "@typescript-eslint/parser",
       rules: {
         "@typescript-eslint/consistent-type-imports": "error",
+        "import/order": ["error", { "newlines-between": "always" }],
       },
       settings: {
         "import/internal-regex": "^~/",
