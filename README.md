@@ -10,7 +10,16 @@ npx create-remix@latest --template ollieri3/bach-stack
 
 ## What's in the Bach Stack?
 
+- Schema Validation using [Zod](https://zod.dev/)
 - Code formatting with [Prettier](https://prettier.io/)
+
+## Features ✨
+
+- Type-safe environment variables on both client & server.
+
+## Documentation todo:
+
+- Add info on using env variables on Client/Server.
 
 ## Getting Started
 
