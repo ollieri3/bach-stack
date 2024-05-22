@@ -14,8 +14,13 @@ export const meta: MetaFunction = () => {
 };
 
 export async function loader() {
-  const result = await db.execute(sql`SELECT 1;`);
-  const isDBConnected = result.rowCount === 1;
+  let isDBConnected = false;
+  try {
+    await db.execute(sql`SELECT 1;`);
+    isDBConnected = true;
+  } catch (err) {
+    isDBConnected = false;
+  }
   return json({ isDBConnected });
 }
 
