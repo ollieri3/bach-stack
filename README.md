@@ -10,6 +10,7 @@ npx create-remix@latest --template ollieri3/bach-stack
 
 ## What's in the Bach Stack?
 
+- Database storage using [PostgreSQL](https://www.postgresql.org/)
 - Styling with [Tailwind CSS](https://tailwindcss.com/)
 - Schema Validation using [Zod](https://zod.dev/)
 - Code formatting with [Prettier](https://prettier.io/)
@@ -19,6 +20,11 @@ npx create-remix@latest --template ollieri3/bach-stack
 
 - Opinionated ESLint configuration.
 - Type-safe environment variables for both client & server.
+
+## Requirements
+
+- Node
+- Docker
 
 ## Documentation todo:
 
