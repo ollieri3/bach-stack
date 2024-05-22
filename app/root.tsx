@@ -4,10 +4,15 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  isRouteErrorResponse,
   json,
   useLoaderData,
   useRouteError,
 } from "@remix-run/react";
+
+import { FourOhFour } from "./components/FourOhFour";
+import { RouteError } from "./components/RouteError";
+import { GenericError } from "./components/GenericError";
 
 import stylesheet from "~/tailwind.css?url";
 import { CLIENT_ENV } from "~/environment.server";
@@ -70,20 +75,15 @@ export default function App() {
 export function ErrorBoundary() {
   const error = useRouteError();
   console.error(error);
-  return (
-    <html lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Meta />
-        <Links />
-      </head>
-      <body>
-        <div role="alert">
-          <p>Something went wrong</p>
-        </div>
-        <Scripts />
-      </body>
-    </html>
-  );
+  if (isRouteErrorResponse(error)) {
+    if (error.status === 404) {
+      return <FourOhFour />;
+    } else {
+      return <RouteError error={error} />;
+    }
+  } else if (error instanceof Error) {
+    return <GenericError error={error} />;
+  } else {
+    return <h1>An unexpected error occurred</h1>;
+  }
 }
