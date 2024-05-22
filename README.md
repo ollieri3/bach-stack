@@ -21,6 +21,7 @@ npx create-remix@latest --template ollieri3/bach-stack
 
 - Opinionated ESLint configuration.
 - Type-safe environment variables for both client & server.
+- Meta tags for Twitter, Facebook, and Open Graph ready to be configured.
 
 ## Requirements
 

@@ -12,6 +12,28 @@ import {
 import stylesheet from "~/tailwind.css?url";
 import { CLIENT_ENV } from "~/environment.server";
 
+export function meta() {
+  return [
+    /** Primary Meta Tags **/
+    { title: "" },
+    { name: "description", content: "" },
+
+    /** Twitter Meta Tags **/
+    { property: "twitter:title", content: "" },
+    { property: "twitter:description", content: "" },
+    { property: "twitter:image", content: "" },
+    { property: "twitter:url", content: "" },
+    { property: "twitter:card", content: "summary_large_image" },
+
+    /** Open Graph Meta Tags **/
+    { property: "og:title", content: "" },
+    { property: "og:description", content: "" },
+    { property: "og:url", content: "" },
+    { property: "og:image", content: "" },
+    { property: "og:type", content: "website" },
+  ];
+}
+
 export function links() {
   return [{ rel: "stylesheet", href: stylesheet }];
 }
