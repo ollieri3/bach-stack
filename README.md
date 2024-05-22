@@ -29,11 +29,7 @@ npx create-remix@latest --template ollieri3/bach-stack
 - Node
 - Docker
 
-## Documentation todo:
-
-- Add info on using env variables on Client/Server.
-
-## Getting Started
+## 🚧 Getting Started / Documentation (Coming Soon )
 
 - Add notes on .env.example file (or do it automatically using remix start scripts).
 
