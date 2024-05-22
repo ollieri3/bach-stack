@@ -11,6 +11,7 @@ npx create-remix@latest --template ollieri3/bach-stack
 ## What's in the Bach Stack?
 
 - Database storage using [PostgreSQL](https://www.postgresql.org/)
+- ORM & Migrations with [Drizzle & Drizzle Kit](https://orm.drizzle.team/)
 - Styling with [Tailwind CSS](https://tailwindcss.com/)
 - Schema Validation using [Zod](https://zod.dev/)
 - Code formatting with [Prettier](https://prettier.io/)

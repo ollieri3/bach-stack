@@ -1,4 +1,7 @@
-import type { MetaFunction } from "@remix-run/node";
+import { json, type MetaFunction } from "@remix-run/node";
+import { sql } from "drizzle-orm";
+
+import { db } from "~/db";
 
 export const meta: MetaFunction = () => {
   return [
@@ -6,6 +9,12 @@ export const meta: MetaFunction = () => {
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
+
+export async function loader() {
+  const result = await db.execute(sql`SELECT 1;`);
+  const isDBConnected = result.rowCount === 1;
+  return json({ isDBConnected });
+}
 
 export default function Index() {
   return (
