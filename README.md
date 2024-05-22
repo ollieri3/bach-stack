@@ -12,6 +12,10 @@ npx create-remix@latest --template ollieri3/bach-stack
 
 - Code formatting with [Prettier](https://prettier.io/)
 
+## Getting Started
+
+- Add notes on .env.example file (or do it automatically using remix start scripts).
+
 ## Development
 
 Run the Vite dev server:
