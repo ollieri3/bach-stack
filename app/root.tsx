@@ -11,8 +11,6 @@ import {
 import stylesheet from "~/tailwind.css?url";
 import { CLIENT_ENV } from "~/environment.server";
 
-console.log("Hello world!");
-
 export function links() {
   return [{ rel: "stylesheet", href: stylesheet }];
 }
