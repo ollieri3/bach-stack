@@ -8,7 +8,12 @@ import {
   useLoaderData,
 } from "@remix-run/react";
 
+import stylesheet from "~/tailwind.css?url";
 import { CLIENT_ENV } from "~/environment.server";
+
+export function links() {
+  return [{ rel: "stylesheet", href: stylesheet }];
+}
 
 export function loader() {
   return json({ ENV: CLIENT_ENV });

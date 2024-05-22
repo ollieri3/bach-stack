@@ -10,11 +10,13 @@ npx create-remix@latest --template ollieri3/bach-stack
 
 ## What's in the Bach Stack?
 
+- Styling with [Tailwind CSS](https://tailwindcss.com/)
 - Schema Validation using [Zod](https://zod.dev/)
 - Code formatting with [Prettier](https://prettier.io/)
 
 ## Features ✨
 
+- An opinionated ESLint configuration.
 - Type-safe environment variables on both client & server.
 
 ## Documentation todo:
