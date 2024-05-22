@@ -2,6 +2,16 @@
 
 ![back-stach-lg](https://github.com/ollieri3/bach-stack/assets/19469640/37cbc9c2-6b27-4477-be17-94eae955611d)
 
+Learn more about [Remix Stacks](https://remix.run/docs/en/main/guides/templates#stacks).
+
+```shell
+npx create-remix@latest --template ollieri3/bach-stack
+```
+
+## What's in the Bach Stack?
+
+- Code formatting with [Prettier](https://prettier.io/)
+
 ## Development
 
 Run the Vite dev server:
