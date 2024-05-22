@@ -14,10 +14,10 @@ npx create-remix@latest --template ollieri3/bach-stack
 - Schema Validation using [Zod](https://zod.dev/)
 - Code formatting with [Prettier](https://prettier.io/)
 
-## Features ✨
+### Other goodies ✨
 
-- An opinionated ESLint configuration.
-- Type-safe environment variables on both client & server.
+- Opinionated ESLint configuration.
+- Type-safe environment variables for both client & server.
 
 ## Documentation todo:
 
