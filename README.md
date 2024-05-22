@@ -21,7 +21,7 @@ npx create-remix@latest --template ollieri3/bach-stack
 
 - Opinionated ESLint configuration.
 - Type-safe environment variables for both client & server.
-- Meta tags for Twitter, Facebook, and Open Graph ready to be configured.
+- SEO & Meta tags for Twitter, Facebook, and Open Graph ready to be configured.
 - Basic [Error Boundaries](https://remix.run/docs/en/main/route/error-boundary) configured and ready to be customized.
 
 ## Requirements
@@ -36,14 +36,6 @@ npx create-remix@latest --template ollieri3/bach-stack
 ## Getting Started
 
 - Add notes on .env.example file (or do it automatically using remix start scripts).
-
-## Development
-
-Run the Vite dev server:
-
-```shellscript
-npm run dev
-```
 
 ## Deployment
 
@@ -60,12 +52,3 @@ npm start
 ```
 
 Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
