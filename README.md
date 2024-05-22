@@ -2,9 +2,6 @@
 
 ![back-stach-lg](https://github.com/ollieri3/bach-stack/assets/19469640/37cbc9c2-6b27-4477-be17-94eae955611d)
 
-
-
-
 ## Development
 
 Run the Vite dev server:
