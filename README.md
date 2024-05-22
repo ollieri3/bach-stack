@@ -13,6 +13,7 @@ npx create-remix@latest --template ollieri3/bach-stack
 - Styling with [Tailwind CSS](https://tailwindcss.com/)
 - Schema Validation using [Zod](https://zod.dev/)
 - Code formatting with [Prettier](https://prettier.io/)
+- Pre-commit hooks with [Husky](https://typicode.github.io/husky/) & [lint-staged](https://github.com/lint-staged/lint-staged)
 
 ### Other goodies ✨
 
