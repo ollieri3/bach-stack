@@ -10,12 +10,12 @@ import {
   useRouteError,
 } from "@remix-run/react";
 
+import stylesheet from "~/tailwind.css?url";
+import { CLIENT_ENV } from "~/environment.server";
+
 import { FourOhFour } from "./components/FourOhFour";
 import { RouteError } from "./components/RouteError";
 import { GenericError } from "./components/GenericError";
-
-import stylesheet from "~/tailwind.css?url";
-import { CLIENT_ENV } from "~/environment.server";
 
 export function meta() {
   return [

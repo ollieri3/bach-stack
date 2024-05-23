@@ -2,9 +2,9 @@ import { json, type MetaFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { sql } from "drizzle-orm";
 
-import bach from "./bach.png";
-
 import { db } from "~/db";
+
+import bach from "./bach.png";
 
 export const meta: MetaFunction = () => {
   return [
