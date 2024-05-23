@@ -7,4 +7,4 @@ services:
       - .db:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: secret
-      POSTGRES_DB: "app"
+      POSTGRES_DB: bach-test

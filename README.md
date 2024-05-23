@@ -31,7 +31,8 @@ npx create-remix@latest --template ollieri3/bach-stack
 
 ## 🚧 Getting Started / Documentation (Coming Soon )
 
-- Add notes on .env.example file (or do it automatically using remix start scripts).
+- Add notes on .env.example file (or copy it automatically using remix start scripts).
+- make the database name configurable, currently defaults to "app".
 
 ## Deployment
 
