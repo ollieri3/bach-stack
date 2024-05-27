@@ -1,19 +1,5 @@
-import fs from "fs";
-import path from "path";
-
-console.log("Running Init Script...");
-
-function deleteLicenseFile() {
-  console.log9("📄 Deleting LICENSE file...");
-  const rootPath = path.resolve(import.meta.dirname, "../");
-  const licenseFilePath = path.join(rootPath, "LICENSE");
-  fs.unlink(licenseFilePath, (err) => {
-    if (err) {
-      console.error("Error deleting LICENSE file:", err);
-    } else {
-      console.log("LICENSE file deleted.");
-    }
-  });
-}
-
-deleteLicenseFile();
+// Currently, Remix DEV CLI commands require a CommonJS module. This satisfies that requirement.
+module.exports = async (...args) => {
+  const { default: main } = await import("./index.mjs");
+  await main(...args);
+};
