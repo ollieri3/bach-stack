@@ -14,7 +14,7 @@ npx create-remix@latest --template ollieri3/bach-stack
 - ORM & Migrations with [Drizzle & Drizzle Kit](https://orm.drizzle.team/)
 - Styling with [Tailwind CSS](https://tailwindcss.com/)
 - Schema Validation using [Zod](https://zod.dev/)
-- Code formatting with [Prettier](https://prettier.io/)
+- Code formatting with [Prettier](https://prettier.io/) + Tailwind Plugin
 - Pre-commit hooks with [Husky](https://typicode.github.io/husky/) & [lint-staged](https://github.com/lint-staged/lint-staged)
 
 ### Other goodies ✨
